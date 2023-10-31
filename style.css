@@ -1,0 +1,203 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 2px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: white;
+}
+.navbar .logo{
+    width: 250px;
+}
+.navbar .logo img{
+    width: 100%;
+}
+.navbar button{
+    background-color: #05386B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.buttons input{
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #05386B;
+    outline: none;
+}
+.buttons button{
+    background-color: #05386B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+#container{
+    /* margin: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 30px;
+    background-color:#F0EAD6;
+}
+.Mcard{
+    width: 250px;
+    height: 350px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.hold_div{
+    width: 100%;
+    height: 75%;
+}
+.hold_div img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    /* margin: 10px; */
+}
+.hold_div .title{
+    text-align: center;
+    margin-top: 0;
+}
+#myButton{
+    background-color: #05386B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.showM{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.showM #ShowMore{
+    background-color: #05386B;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: none;
+    cursor: pointer;
+}
+.Year{
+    margin-top: -13px;
+    text-align: center;
+    font-style: italic;
+}
+
+.poster{
+    width: 40%;
+}
+.TextArea{
+    width: 60%;
+}
+.Cont-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    gap: 2rem;
+}
+.Cont-cards img{
+    width: 300px;
+    height: 400px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+footer i{
+    color: red;
+}
+.TextArea .Ita{
+    font-style: italic;
+}
+.TextArea p span{
+    font-weight: bold;
+}
+#my_modal{
+    border: none;
+    background-color:whitesmoke;
+}
+.close{
+    display: flex;
+    justify-content: flex-end;
+}
+.close button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.close button i{
+    font-size: 20px;
+}
+.TextArea .lineClamp{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Set the maximum number of lines to display */
+    overflow: hidden;
+}
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #05386B;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.Explore{
+    font-size: 2rem;
+}
+@media (max-width:950px) {
+    .buttons input{
+        width: 200px;
+    }
+    .Cont-cards{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+}
